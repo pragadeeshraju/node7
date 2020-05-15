@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN  apt-get -y update && apt install curl
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-RUN  nvm install 7.9.0 && nvm use 7.9.0
+RUN  nvm install 7.9.0 -y && nvm use 7.9.0
 WORKDIR /home/site/wwwroot
 
 COPY . /home/site/wwwroot
