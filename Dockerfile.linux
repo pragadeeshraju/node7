@@ -1,0 +1,16 @@
+FROM ubuntu
+
+RUN sudo apt-get -y update
+RUN curl -sL https://deb.nodesource.com/setup_7.9
+RUN sudo apt-get install -y nodejs
+
+WORKDIR /home/site/wwwroot
+
+COPY . /home/site/wwwroot
+
+
+EXPOSE 80
+
+CMD ["node", "index.js"]
+
+
