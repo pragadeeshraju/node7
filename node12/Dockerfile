@@ -9,7 +9,7 @@ RUN powershell.exe -Command Set-ExecutionPolicy Bypass -Scope Process -Force; ie
 #RUN choco.exe install sql2012.nativeclient -y
 
 #RUN choco.exe install vim -y
-RUN choco.exe install nodejs --version=12.18.0 -y 
+RUN choco.exe install nodejs --version=7.9.0 -y 
 
 WORKDIR c:/home/site/wwwroot
 
